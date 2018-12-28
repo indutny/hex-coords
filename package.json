@@ -1,6 +1,6 @@
 {
   "name": "hex-coords",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hexagon coordinates to Cartesian and back",
   "main": "lib/hex.js",
   "types": "lib/hex.d.ts",
