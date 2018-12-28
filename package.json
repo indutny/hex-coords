@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Hexagon coordinates to Cartesian and back",
   "main": "lib/hex.js",
+  "types": "lib/hex.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf lib",
