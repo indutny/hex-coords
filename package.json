@@ -1,0 +1,39 @@
+{
+  "name": "hex-coords",
+  "version": "1.0.0",
+  "description": "Hexagon coordinates to Cartesian and back",
+  "main": "lib/hex.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "prepare": "npm run clean && npm run build",
+    "lint": "tslint -c tslint.json src/**/*.ts test/**/*.ts",
+    "fix-lint": "npm run lint -- --fix",
+    "mocha": "mocha --timeout=10000 -r ts-node/register/type-check --reporter spec test/*-test.ts",
+    "test": "npm run mocha && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/indutny/hex-coords.git"
+  },
+  "keywords": [
+    "hex",
+    "hexagon",
+    "coordinates",
+    "cartesian"
+  ],
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indutny/hex-coords/issues"
+  },
+  "homepage": "https://github.com/indutny/hex-coords#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  }
+}
